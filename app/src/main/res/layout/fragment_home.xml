@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearhomemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_logo_eng"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearhome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/txtday"
+                style="@style/Animation.Design.BottomSheetDialog"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.3"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txt_goalWater"
+                    style="@style/Animation.Design.BottomSheetDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <ProgressBar
+                    android:id="@+id/pdwater"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:indeterminate="false"
+                    android:max="2000"
+                    android:progress="320"
+                    android:scrollbars="horizontal|vertical|none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txt_realWater"
+                    style="@style/Animation.Design.BottomSheetDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="0"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10">
+
+                    <ImageView
+                        android:id="@+id/glass_50"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/glass_1" />
+
+                    <ImageView
+                        android:id="@+id/glass_100"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/glass_2" />
+
+                    <ImageView
+                        android:id="@+id/glass_200"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/glass_4" />
+
+                    <ImageView
+                        android:id="@+id/glass_250"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/glass_5" />
+
+                    <ImageView
+                        android:id="@+id/glass_500"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/glass_6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="0.1">
+
+                    <TextView
+                        style="@style/Animation.Design.BottomSheetDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1.5"
+                        android:text="50"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        style="@style/Animation.Design.BottomSheetDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:text="100"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        style="@style/Animation.Design.BottomSheetDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:text="200"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        style="@style/Animation.Design.BottomSheetDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:text="250"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        style="@style/Animation.Design.BottomSheetDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="500"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
